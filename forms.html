@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" class="no-webp">
+
+<head>
+    <!--
+            Author: Ang Yun Zane
+            Date: 6 July 2019
+
+            filename: forms.html
+        -->
+
+    <meta charset="utf-8" />
+    <meta name="author" content="Ang Yun Zane" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywoords" content="computer, Electronic, repair, warranty, network" />
+    <meta name="theme-color" content="#000000">
+    <title>Home|Zane Electronic</title>
+    <script src="script/webp.js"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-12/css/all.min.css"
+        integrity="sha256-cC4ByuxbguozEVx8jcKy94MFiGvxN9GwjCqZ8f3+yBk=" crossorigin="anonymous" />
+    <!-- google font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script src="script/FormValidation.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+</head>
+
+<body class="text-white">
+    <div class="first">
+        <header>
+            <a href="index.html">
+                <picture>
+                    <source media="(max-width: 479px)" srcset="images/logosmall.webp" type="image/webp">
+                    <source srcset="images/logo.webp" type="image/webp">
+                    <img id="logo" src="images/backwards/logo.png" alt="logo" class="mx-auto d-block" />
+                </picture>
+            </a>
+            <!-- desktop navigation -->
+            <nav class="navbar navbar-expand-sm bg-danger navbar-dark justify-content-center d-none d-md-block">
+                <ul class="navbar-nav justify-content-center ">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Our Services</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Support</a>
+                        <div class="dropdown-menu">
+                            <a href="support.html" class="dropdown-item">Warranty</a>
+                            <a href="troubleshoot.html" class="dropdown-item">Troubleshoot</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="forms.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <!-- mobile navigation -->
+            <nav class="navbar navbar-expand-md bg-danger navbar-dark d-flex d-md-none">
+                <a class="navbar-brand" href="#">Navigation</a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavbar" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Services.html">Our Services</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="support.html">Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="careers.html">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="forms.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <article class="container">
+            <h1 class="display-4">Contact Us</h1>
+            <!-- Form -->
+            <form id="theForm" method="post" action="/node" class="form-horizontal">
+                <fieldset class="contactus">
+                    <legend><span class="fas fa-user"></span> Person info</legend>
+                    <div class="row">
+                        <div class="col-md-1 form-group">
+                            <label for="titles" class="control-label col-sm-2"><span
+                                    class="fas fa-address-card"></span>&nbsp;Title</label>
+                            <select name="titles" id="titles" class="form-control form-control-sm">
+                                <option value="Mr">Mr</option>
+                                <option value="Ms">Ms</option>
+                                <option value="Mrs">Mrs</option>
+                                <option value="Dr">Dr</option>
+                            </select>
+                        </div>
+                        <div class="col-md-5 form-group">
+                            <label for="Firstnameinput" class="control-label col-sm-2">First&nbsp;Name<span
+                                    class="text-danger">*</span>
+                            </label>
+                            <input type="text" name="Firstname" class="form-control" id="Firstnameinput"
+                                placeholder="Your first name" />
+                        </div>
+                        <div class="col-md  form-group">
+                            <label for="Lastnameinput" class="control-label col-sm-2">Last&nbsp;Name<span
+                                    class="text-danger">*</span>
+                            </label>
+                            <input type="text" name="Lastname" class="form-control" id="Lastnameinput"
+                                placeholder="Your last name" />
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6  form-group">
+                            <label for="emailinput" class="control-label col-sm-2">
+                                <span class="fas fa-envelope"></span>&nbsp;Email<span
+                                    class="text-danger">*</span></label>
+                            <input type="email" class="form-control" name="email" id="emailinput"
+                                placeholder="address@example.com" />
+                        </div>
+                        <div class="col-md  form-group">
+                            <label for="phoneinput" class="control-label col-sm-2"><span
+                                    class="fas fa-phone"></span>&nbsp;Phone</label>
+                            <div>
+                                <input type="tel" class="form-control" name="phone" id="phoneinput"
+                                    placeholder="98765432" />
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="Category form-group">
+                    <legend>Category<span class="text-danger">*</span></legend>
+                    <select class="form-control" name="category" id="Categoryinput">
+                        <option value="" selected>Please select...</option>
+                        <option value="General">General enquiry</option>
+                        <option value="Warranty">Warranty</option>
+                        <option value="Network">Network problem</option>
+                        <option value="Careers">Careers</option>
+                        <option value="Feedback">Feedback</option>
+                    </select>
+                </fieldset>
+                <fieldset class="message form-group">
+                    <legend>Message<span class="text-danger">*</span></legend>
+                    <textarea class="form-control " name="message" id="message" cols="130" rows="15"></textarea>
+                    <div class="float-right"><span id="word">0</span><span>&nbsp;word(s)</span></div>
+                </fieldset>
+                <div class="float-right"></div>
+                <fieldset class="submitbutton form-group">
+                    <input type="reset" value="Clear" class="btn btn-danger" id="reset" />
+                    <input type="submit" value="Submit" class="btn btn-danger" id="submit" />
+                </fieldset>
+            </form>
+            <div class="row">
+                <iframe class="col-md"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.3634572584297!2d103.7439236579721!3d1.3401829997556485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMjAnMjQuNyJOIDEwM8KwNDQnNDIuMSJF!5e0!3m2!1sen!2ssg!4v1557629844916!5m2!1sen!2ssg"
+                    width="500" height="350" allowfullscreen></iframe>
+                <address class="col-md">
+                    <!-- contact details -->
+                    <span class="fas fa-envelope"></span>&nbsp;Email us at:<br>
+                    <a class="text-danger" href="mailto:enquiry@zaneelectronic.com">enquiry@zaneelectronic.com </a><br>
+                    <span class="fas fa-phone"></span>&nbsp;Tel: <a class="text-danger"
+                        href="tel:+6568123456 ">(+65)68123456</a><br>
+                    <span class="fas fa-map-marker-alt"></span>&nbsp;Address:<br>
+                    7 Toh Guan Road #01-05 Singapore (600007)
+                </address>
+            </div>
+
+    </article>
+    </div>
+    <!-- scroll top button -->
+    <button class="btn btn-danger" id="top" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+    <script src="script/scroll.js"></script>
+    <!-- JQuery -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap javascript -->
+    <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/4.3.1/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <footer class="bg-danger text-center">
+        Copyright &copy; 2019 Zane Electronic | <a class="text-white" href="thankyou.html">photo and font credit</a>
+    </footer>
+</body>
+
+</html>

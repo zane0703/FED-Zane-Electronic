@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" class="no-webp">
+
+<head>
+    <!--
+            Author: Ang Yun Zane
+            Date: 6 July 2019
+
+            filename: troubleshoot.html
+        -->
+
+    <meta charset="utf-8" />
+    <meta name="author" content="Ang Yun Zane" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywoords" content="computer, Electronic, repair, warranty, network" />
+    <meta name="theme-color" content="#000000">
+    <title>Home|Zane Electronic</title>
+    <script src="script/webp.js"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-12/css/all.min.css"
+        integrity="sha256-cC4ByuxbguozEVx8jcKy94MFiGvxN9GwjCqZ8f3+yBk=" crossorigin="anonymous" />
+    <!-- google font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+</head>
+
+<body class="text-white">
+    <div class="first">
+        <header>
+            <a href="index.html">
+                <picture>
+                    <source media="(max-width: 479px)" srcset="images/logosmall.webp" type="image/webp">
+                    <source srcset="images/logo.webp" type="image/webp">
+                    <img id="logo" src="images/backwards/logo.png" alt="logo" class="mx-auto d-block" />
+                </picture>
+            </a>
+            <!-- desktop navigation -->
+            <nav class="navbar navbar-expand-sm bg-danger navbar-dark justify-content-center d-none d-md-block">
+                <ul class="navbar-nav justify-content-center ">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Our Services</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Support</a>
+                        <div class="dropdown-menu">
+                            <a href="support.html" class="dropdown-item">Warranty</a>
+                            <a href="troubleshoot.html" class="dropdown-item active">Troubleshoot</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="forms.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <!-- mobile navigation -->
+            <nav class="navbar navbar-expand-md bg-danger navbar-dark d-flex d-md-none">
+                <a class="navbar-brand" href="#">Navigation</a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Our Services</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="support.html">Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="careers.html">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="forms.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+
+        <article class="otimg container">
+
+            <h4>The following is a list of commonly asked questions regarding computer issues and basic troubleshooting steps to address these issues. For further help please consult our helpline</h4>
+            <!-- Jump link -->
+            <div class="linkbox">
+                <ul class="nav nav-pills flex-column" id="trouble">
+                    <li class="nav-item"><a class="text-white nav-link bg-danger text-center nav-link" href="#noton">My
+                            PC
+                            did not turn on after I press the on button</a></li>
+                    <li class="nav-item"><a class="text-white nav-link bg-danger text-center nav-link" href="#audio">My
+                            audio is not functioning</a></li>
+                    <li class="nav-item"><a class=" text-white nav-link bg-danger text-center nav-link"
+                            href="#display">My
+                            monitor can't display anything</a></li>
+                </ul>
+            </div>
+            <div ><a id="noton">
+                    <p class="h1">My PC did not turn on after I press the on button</p>
+                </a>
+                <p class="h3">Check that your power source is on and plugged in</p>
+                <div class="row">
+                    <picture class="col-md-6 ">
+                        <source srcset="images/powerPlug.webp" type="image/webp">
+                        <img src="images/backwards/powerPlug.jpeg" class="img-fluid rounded" alt="PowerPlug" width="300"
+                            height="417">
+                    </picture>
+                    <picture class="col-md-6 ">
+                        <source srcset="images/powersupply.webp" type="image/webp">
+                        <img src="images/backwards/powersupply.jpeg" class="img-fluid rounded" alt="Power Supply"
+                            width="300" height="185">
+                    </picture>
+                </div>
+            </div>
+            <div class="border-top border-danger"><a id="audio">
+                    <p class="h1">My audio is not functioning</p>
+                </a>
+                <div class="row">
+                    <div class="col-md">
+                        <picture>
+                            <source srcset="images/audio.webp" type="image/webp">
+                            <img src="images/backwards/audio.PNG" alt="audio" class="img-fluid rounded" width="383"
+                                height="330">
+                        </picture>
+                        <p>1) Right-click on the audio icon as shown above</p>
+                        <p>2) Select "Sounds" on the the menu</p>
+                    </div>
+                    <div class="col-md">
+                        <picture>
+                            <source srcset="images/audio2.webp" type="image/webp">
+                            <img src="images/backwards/audio2.PNG" alt="playback" class="img-fluid rounded" width="400"
+                                height="502">
+                        </picture>
+                        <p>3) Select "Playback" tap</p>
+                        <p>4) Check if your choice of audio driver is set to default<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&#8226; Select speaker if you are using headphone jack or PC speaker
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&#8226; Select digital display audio for HDML
+                        </p>
+                        <p>5) Click on "Set Default" then click "OK"</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="border-top border-danger"><a id="display">
+                    <p class="h1">My monitor can't display anything</p>
+
+                </a>
+                <div class="row">
+                    <div class="col-md">
+                        <picture>
+                            <source srcset="images/hdmi.webp" type="image/webp">
+                            <img src="images/backwards/hdmi.jpeg" alt="displayport" class="img-fluid rounded"
+                                width="400" height="223">
+                        </picture>
+                        <p>1) Check if your monitor are plugged in to the power source</p>
+                        <p>2) Check if the display port is plugged in properly</p>
+                    </div>
+                    <div class="col-md">
+                        <picture>
+                            <source srcset="images/DGPU.webp" type="image/webp">
+                            <img src="images/backwards/DGPU.jpeg" alt="DGPU" width="400" class="img-fluid rounded"
+                                height="569">
+                        </picture>
+                        <p>3) If you are using dedicated gpu (e.g nvidia), check if your display port is plugged into
+                        </p>
+                        <p>&nbsp;&nbsp;the gpu instead of the motherboard</p>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+    </div>
+    <!-- scroll top button -->
+    <button class="btn btn-danger" id="top" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+    <script src="script/scroll.js"></script>
+    <footer class="bg-danger text-center">
+        Copyright &copy; 2019 Zane Electronic | <a class="text-white" href="thankyou.html">photo and font cradit</a>
+    </footer>
+    <!-- JQuery -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap javascript -->
+    <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/4.3.1/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
